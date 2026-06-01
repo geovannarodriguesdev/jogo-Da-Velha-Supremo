@@ -1,4 +1,4 @@
-# Jogo da Velha Supremo 🕹️
+# Jogo da Velha Supremo ou Jogo da Velha 2🕹️
 
 Projeto desenvolvido em Java que expande o jogo da velha tradicional para uma versão estratégica, onde cada casa do tabuleiro principal contém um minijogo completo.
 
