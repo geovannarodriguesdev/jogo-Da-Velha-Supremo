@@ -111,6 +111,7 @@ public class JogoDaVelhaSupremo {
             // verifica se o tabuleiro principal tem um vencedor
             if (checarTabuleiroPrincipal()) {
                 pularLinhas();
+                jogoAtivo = false;
                 System.out.println("ACABOU");
 
                 //DESENVOLVIMENTO 2
@@ -135,7 +136,7 @@ public class JogoDaVelhaSupremo {
                         int j = linhaInterna * 3 + colInterna; // índice da célula dentro do mini tabuleiro
 
                         // se a célula é █ ou se o jogo já acabou e a célula é espaço, imprime sem colchetes
-                        if (tabuleiro[i][j].equals("\u2588") || (tabuleiroPrincipal[i].equals(" ") == false && tabuleiro[i][j].equals(" "))) {
+                        if (tabuleiro[i][j].equals("\u2588") || (!tabuleiroPrincipal[i].equals(" ") && tabuleiro[i][j].equals(" "))) {
                             System.out.print(" " + tabuleiro[i][j] + " ");
                         } else {
                             System.out.print("[" + tabuleiro[i][j] + "]");
@@ -243,7 +244,7 @@ public class JogoDaVelhaSupremo {
     }
 
     public static void pularLinhas() {
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");;
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
     /**
